@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     AñadirDatos(newEntry);
                     notaEntrada.setText("");
                 }else{
-                    Toast.makeText(MainActivity.this, "You must put something in the text field!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "DEBES PONER ALGO EN EL TEXTO!", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -51,9 +51,9 @@ public class MainActivity extends AppCompatActivity {
         boolean insertarDatos = myDB.añadirDatos(newEntry);
 
         if(insertarDatos==true){
-            Toast.makeText(this, "Data Successfully Inserted!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "DATO INGRESADO!", Toast.LENGTH_LONG).show();
         }else{
-            Toast.makeText(this, "Something went wrong :(.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "ALGO FALLÓ :(.", Toast.LENGTH_LONG).show();
         }
     }
 }

@@ -26,7 +26,7 @@ public class VerContenidos extends AppCompatActivity {
         ArrayList<String> theList = new ArrayList<>();
         Cursor data = myDB.getListContents();
         if(data.getCount() == 0){
-            Toast.makeText(this, "There are no contents in this list!",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "No hay contenidos en esta lista!",Toast.LENGTH_LONG).show();
         }else{
             while(data.moveToNext()){
                 theList.add(data.getString(1));
